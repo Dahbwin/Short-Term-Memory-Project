@@ -1,6 +1,6 @@
-# Neuro Sequence Trainer
+# Sequence Retention
 
-> Scientific working memory training application with dual-modality sequences (numbers + words)
+> Neural Memory Performance Lab - Scientific working memory training with dual-modality sequences
 
 [![Status](https://img.shields.io/badge/status-production-brightgreen)]()
 [![License](https://img.shields.io/badge/license-MIT-blue)]()
@@ -36,12 +36,12 @@ Professional web application designed for cognitive training and working memory 
 
 ### Local Development
 
-```powershell
+```bash
 # Navigate to project directory
-cd "c:\Users\tsuok\Desktop\Projeto"
+cd short-term-memory-project
 
 # Serve the public folder
-python -m http.server 8000 --directory .\public
+python -m http.server 8000 --directory ./public
 
 # Open browser to http://localhost:8000
 ```
@@ -131,9 +131,11 @@ All UI text supports EN/PT-BR. Add new languages:
 
 The project includes Python scripts for offline testing:
 
-```powershell
-# Activate virtual environment
-.\.venv\Scripts\Activate.ps1
+```bash
+# Activate virtual environment (if using venv)
+source .venv/bin/activate  # Linux/Mac
+# or
+.venv\Scripts\Activate.ps1  # Windows
 
 # Run CLI version
 python basic.py
@@ -179,36 +181,4 @@ MIT License - Free for personal and commercial use.
 
 ---
 
-**Built for cognitive science and web performance**
-
-Como usar
-
-1. Ative o ambiente virtual (se houver):
-
-```powershell
-# Windows PowerShell
-& .\venv\Scripts\Activate.ps1
-```
-
-2. Instale dependências (opcional, para rodar `basic.py`):
-
-```powershell
-python -m pip install -r requirements.txt
-```
-
-3. Inicialize o banco de dados `log.db`:
-
-```powershell
-python init_db.py
-```
-
-4. Rode o app (versão terminal):
-
-```powershell
-python basic.py
-```
-
-Observações
-
- - Se o terminal do VS Code estiver usando outro interpretador, selecione o Python correto na barra de status (ou ative o `venv`) antes de rodar os comandos acima.
- - A interface gráfica anterior foi removida; use `basic.py` (terminal) ou solicite outra interface compatível com Python 3.14.
+**Built for cognitive science research and neural memory performance optimization**
