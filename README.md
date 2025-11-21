@@ -3,7 +3,7 @@
 > Neural Memory Performance Lab - Scientific working memory training with dual-modality sequences
 
 [![Status](https://img.shields.io/badge/status-production-brightgreen)]()
-[![License](https://img.shields.io/badge/license-MIT-blue)]()
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ## 🎯 Overview
 
@@ -177,7 +177,13 @@ CSS variables enable easy customization. Override in custom stylesheets or modif
 
 ## 📝 License
 
-MIT License - Free for personal and commercial use.
+This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+**Attribution-NonCommercial-ShareAlike 4.0 International**
+- ✅ Share and adapt for non-commercial purposes
+- ✅ Provide attribution to the original author
+- ✅ Distribute derivatives under the same license
+- ❌ Commercial use prohibited without permission
 
 ## 📸 Screenshots
 
