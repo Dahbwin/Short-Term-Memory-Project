@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Settings — Sequence Retention</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="./assets/images/favicon-32.png">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/theme-dark.css">
+    <link rel="stylesheet" href="./assets/css/theme-light.css">
+  </head>
+  <body class="theme-dark">
+    <header class="topbar">
+      <div class="topbar-content">
+        <div class="logo-glow-small">
+          <img src="./assets/images/logo.svg" alt="Sequence Retention" class="logo-game">
+        </div>
+      </div>
+    </header>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">◐</button>
+    <main class="app-container">
+      <section class="card settings-card">
+        <h1 data-i18n="settings_title">Settings</h1>
+
+        <label data-i18n="settings_theme">Theme</label>
+        <div class="btn-row">
+          <button id="theme-dark" class="btn secondary" data-i18n="settings_theme_dark">Dark</button>
+          <button id="theme-light" class="btn secondary" data-i18n="settings_theme_light">Light</button>
+        </div>
+
+        <label data-i18n="settings_language">Language</label>
+        <div class="btn-row">
+          <button id="lang-en" class="btn secondary">English 🇺🇸</button>
+          <button id="lang-pt" class="btn secondary">Português 🇧🇷</button>
+        </div>
+
+        <label data-i18n="settings_sound">Sound Effects</label>
+        <div class="setting-row">
+          <label class="checkbox-label">
+            <input type="checkbox" id="sound-enable">
+            <span data-i18n="settings_sound_enable">Enable sounds</span>
+          </label>
+        </div>
+        
+        <label data-i18n="settings_sound_volume">Volume</label>
+        <input id="sound-volume" type="range" min="0" max="1" step="0.01" value="0.5">
+        <span id="volume-display" class="small muted">50%</span>
+
+        <div class="controls">
+          <button id="clear-data" class="btn secondary" data-i18n="stats_clear_data">Clear all data</button>
+          <a href="./index.html" class="btn ghost" data-i18n="nav_home">Menu</a>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./assets/js/settings.js"></script>
+  </body>
+</html>

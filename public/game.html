@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Play — Neuro Sequence Trainer</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="./assets/images/favicon-32.png">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/theme-dark.css">
+    <link rel="stylesheet" href="./assets/css/theme-light.css">
+  </head>
+  <body class="theme-dark">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">◐</button>
+    <header class="topbar">
+      <div class="topbar-content">
+        <div class="logo-glow-small">
+          <img src="./assets/images/logo.svg" class="logo-game" alt="Sequence Retention">
+        </div>
+        <div id="level-label" class="level-label">
+          <span data-i18n="label_level">Level</span>:
+          <span id="level-name">Easy</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="game-container">
+      <section class="card game-card">
+        <div id="game-stage" class="game-stage">
+          <div id="display-item" class="display-item">—</div>
+          <p id="display-sub" class="muted">Memorize the sequence...</p>
+        </div>
+
+        <div id="answer-stage" class="answer-stage hidden">
+          <label for="answer-input" data-i18n="display_type_items">Type your answer (comma-separated), press Enter to submit</label>
+          <input
+            id="answer-input"
+            type="text"
+            placeholder="e.g., 5,apple,3,banana,7"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="controls">
+          <div class="difficulty-row" id="difficulty-row"></div>
+
+          <div class="btn-row">
+            <button id="start-btn" class="btn primary" data-i18n="btn_start">Start round</button>
+            <button id="submit-btn" class="btn secondary" data-i18n="btn_submit" disabled>Submit answer</button>
+            <a href="./index.html" class="btn ghost" data-i18n="nav_home">Menu</a>
+          </div>
+
+          <div class="round-meta">
+            <span id="round-info"><span data-i18n="label_items">Items</span>: —</span>
+            <span id="round-time"><span data-i18n="label_time">Time</span>: 0.00s</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module">
+      import GameController from './assets/js/game_controller.js';
+      import { initTheme, toggleTheme } from './assets/js/theme.js';
+      import { initI18n } from './assets/js/i18n.js';
+      import { initSound, preloadSounds } from './assets/js/sound.js';
+      
+      // Initialize systems
+      initTheme();
+      initSound();
+      preloadSounds();
+      
+      document.addEventListener('DOMContentLoaded', async () => {
+        // Initialize i18n
+        await initI18n();
+        
+        // Theme toggle
+        const themeBtn = document.getElementById('theme-toggle');
+        if (themeBtn) {
+          themeBtn.addEventListener('click', toggleTheme);
+        }
+        
+        // Initialize game controller
+        requestAnimationFrame(() => {
+          try {
+            new GameController({});
+          } catch (err) {
+            console.error('GameController init error:', err);
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>

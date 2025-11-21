@@ -1,0 +1,59 @@
+{
+  "app_title": "Neuro Sequence Trainer",
+  "app_subtitle": "Scientific working memory training",
+  
+  "nav_home": "Home",
+  "nav_train": "Train",
+  "nav_stats": "Statistics",
+  "nav_settings": "Settings",
+  
+  "btn_start": "Start round",
+  "btn_submit": "Submit answer",
+  "btn_try_again": "Try again",
+  "btn_change_difficulty": "Change difficulty",
+  "btn_menu": "Menu",
+  
+  "label_level": "Level",
+  "label_difficulty": "Difficulty",
+  "label_items": "Items",
+  "label_time": "Time",
+  "label_errors": "Errors",
+  "label_accuracy": "Accuracy",
+  
+  "difficulty_easy": "Easy",
+  "difficulty_medium": "Medium",
+  "difficulty_hard": "Hard",
+  "difficulty_very_hard": "Very Hard",
+  
+  "display_memorize": "Memorize the sequence...",
+  "display_type_items": "Type items separated by commas, then press Enter",
+  
+  "result_flawless": "Flawless memory.",
+  "result_close": "Very close.",
+  "result_training": "Training.",
+  "result_expected": "expected",
+  "result_you": "you",
+  "result_position": "Pos",
+  
+  "stats_title": "Statistics",
+  "stats_total_rounds": "Total Rounds",
+  "stats_accuracy_avg": "Avg Accuracy",
+  "stats_best_time": "Best Time",
+  "stats_no_data": "No training data yet. Start your first round!",
+  "stats_clear_data": "Clear all data",
+  
+  "settings_title": "Settings",
+  "settings_theme": "Theme",
+  "settings_theme_dark": "Dark",
+  "settings_theme_light": "Light",
+  "settings_language": "Language",
+  "settings_sound": "Sound Effects",
+  "settings_sound_enable": "Enable sounds",
+  "settings_sound_volume": "Volume",
+  "settings_seed": "Random Seed",
+  "settings_seed_placeholder": "Leave empty for random",
+  
+  "home_welcome": "Train your working memory with scientific precision",
+  "home_description": "Dual-modality sequences (numbers + words) designed to challenge and improve your cognitive capacity.",
+  "home_start_training": "Start Training"
+}

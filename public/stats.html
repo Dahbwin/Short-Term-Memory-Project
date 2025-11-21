@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Statistics — Sequence Retention</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="./assets/images/favicon-32.png">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/theme-dark.css">
+    <link rel="stylesheet" href="./assets/css/theme-light.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body class="theme-dark">
+    <header class="topbar">
+      <div class="topbar-content">
+        <div class="logo-glow-small">
+          <img src="./assets/images/logo.svg" alt="Sequence Retention" class="logo-game">
+        </div>
+      </div>
+    </header>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">◐</button>
+    <main class="app-container">
+      <section class="card stats-card">
+        <h1 data-i18n="stats_title">Statistics</h1>
+        <div class="kpi-row" id="kpi-row"></div>
+        <canvas id="mainChart" height="120"></canvas>
+        <h3>Rounds</h3>
+        <table class="table" id="rounds-table">
+          <thead><tr>
+            <th data-i18n="label_time">Time</th>
+            <th data-i18n="label_difficulty">Difficulty</th>
+            <th data-i18n="label_items">Items</th>
+            <th>Time(s)</th>
+            <th data-i18n="label_errors">Errors</th>
+            <th>Result</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+        <div class="controls">
+          <a href="./index.html" class="btn ghost" data-i18n="nav_home">Menu</a>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./assets/js/stats.js"></script>
+  </body>
+</html>

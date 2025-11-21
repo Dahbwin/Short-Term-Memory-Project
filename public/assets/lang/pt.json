@@ -1,0 +1,59 @@
+{
+  "app_title": "Neuro Sequence Trainer",
+  "app_subtitle": "Treinamento científico de memória operacional",
+  
+  "nav_home": "Início",
+  "nav_train": "Treinar",
+  "nav_stats": "Estatísticas",
+  "nav_settings": "Configurações",
+  
+  "btn_start": "Começar rodada",
+  "btn_submit": "Enviar resposta",
+  "btn_try_again": "Tentar novamente",
+  "btn_change_difficulty": "Mudar dificuldade",
+  "btn_menu": "Menu",
+  
+  "label_level": "Nível",
+  "label_difficulty": "Dificuldade",
+  "label_items": "Itens",
+  "label_time": "Tempo",
+  "label_errors": "Erros",
+  "label_accuracy": "Precisão",
+  
+  "difficulty_easy": "Fácil",
+  "difficulty_medium": "Médio",
+  "difficulty_hard": "Difícil",
+  "difficulty_very_hard": "Muito Difícil",
+  
+  "display_memorize": "Memorize a sequência...",
+  "display_type_items": "Digite os itens separados por vírgula, depois Enter",
+  
+  "result_flawless": "Memória perfeita.",
+  "result_close": "Muito perto.",
+  "result_training": "Treinando.",
+  "result_expected": "esperado",
+  "result_you": "você",
+  "result_position": "Pos",
+  
+  "stats_title": "Estatísticas",
+  "stats_total_rounds": "Rodadas Totais",
+  "stats_accuracy_avg": "Precisão Média",
+  "stats_best_time": "Melhor Tempo",
+  "stats_no_data": "Sem dados de treino ainda. Comece sua primeira rodada!",
+  "stats_clear_data": "Limpar todos os dados",
+  
+  "settings_title": "Configurações",
+  "settings_theme": "Tema",
+  "settings_theme_dark": "Escuro",
+  "settings_theme_light": "Claro",
+  "settings_language": "Idioma",
+  "settings_sound": "Efeitos Sonoros",
+  "settings_sound_enable": "Habilitar sons",
+  "settings_sound_volume": "Volume",
+  "settings_seed": "Seed Aleatória",
+  "settings_seed_placeholder": "Deixe vazio para aleatório",
+  
+  "home_welcome": "Treine sua memória operacional com precisão científica",
+  "home_description": "Sequências de dupla modalidade (números + palavras) projetadas para desafiar e melhorar sua capacidade cognitiva.",
+  "home_start_training": "Começar Treinamento"
+}

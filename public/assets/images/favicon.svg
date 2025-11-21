@@ -1,0 +1,21 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Contorno principal -->
+  <path
+    d="M24 2C14 2 6 10 6 20C6 30 14 38 24 38C34 38 42 30 42 20C42 10 34 2 24 2Z"
+    stroke="#A855F7"
+    stroke-width="2.2"
+    fill="none"
+  />
+  <!-- Trilhas internas -->
+  <path d="M12 10 L18 14 L18 22 L12 28" stroke="#22D3EE" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M24 6 L24 14 L30 18 L34 24" stroke="#22D3EE" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M18 32 L24 28 L30 30 L36 34" stroke="#22D3EE" stroke-width="1.4" stroke-linecap="round"/>
+  
+  <!-- Nós -->
+  <circle cx="12" cy="10" r="2.1" fill="#22D3EE"/>
+  <circle cx="18" cy="14" r="2.1" fill="#22D3EE"/>
+  <circle cx="24" cy="6" r="2.1" fill="#22D3EE"/>
+  <circle cx="30" cy="18" r="2.1" fill="#22D3EE"/>
+  <circle cx="34" cy="24" r="2.1" fill="#22D3EE"/>
+  <circle cx="24" cy="28" r="2.1" fill="#22D3EE"/>
+</svg>
