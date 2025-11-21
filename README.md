@@ -179,6 +179,20 @@ CSS variables enable easy customization. Override in custom stylesheets or modif
 
 MIT License - Free for personal and commercial use.
 
+## 📸 Screenshots
+
+### 🏠 Home
+![Home](docs/screenshots/home.png)
+
+### 🎯 Gameplay
+![Gameplay](docs/screenshots/gameplay.png)
+
+### 📊 Statistics
+![Statistics](docs/screenshots/stats.png)
+
+### ⚙️ Settings
+![Settings](docs/screenshots/settings.png)
+
 ---
 
 **Built for cognitive science research and neural memory performance optimization**
